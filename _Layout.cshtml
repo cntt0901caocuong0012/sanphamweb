@@ -3,844 +3,612 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FPT-Shop</title>
+    <title>Pico | Cửa hàng Điện máy lạnh</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/Style.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/CSSCustomer/searchcss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="~/Content/jquery-3.3.1.min.js"></script>
+    <link href="~/Content/fontawesome/css/all.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="header">
+        <div id="adv-header" style="text-align:center">
+            <img src="~/Content/images/4095_banner-hoa-don-dien-tu-1200x60-01.gif" />
+        </div>
+        <!--container-->
         <div class="container">
-            <div class="fpt-hdtop">
-                <div class="fpt-wrap">
-                    <a class="fs-logo" href="/" title="">
-                        <i class="ficon f-logo"></i>
-                    </a>
-                    <ul class="fs-hdmn">
-                        <li>
-                            <a href="/tin-tuc" title="">
-                                <i class="ficon f-news"></i> <span>Thông tin hay</span>
-                            </a>
-                            <ul class="fs-hdmsub fs-hdmsnews">
-                                <li class="">
-                                    <a href="/tin-tuc" title="">Tin mới</a>
+            <a href="#menu-hidden" class="btn menu-hidden">&nbsp</a>
+            <header class="row">
+                <!--mainheader-->
+                <div id="main-header">
+                    <div class="col-md-3 col-sm-2 col-xs-12">
+                        <div id="logo">
+                            <img src="~/Content/images/logo.png" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
+                        <div class="menu">
+                            <ul id="top-navigation" style="list-style-type:none; overflow:hidden; padding-left:0px;width: 100%;margin: auto;">
+                                <li style="float:left"><a href="#Giasoc" style="color:orangered;display: block;padding:5px" class="fas fa-splotch">Giá sốc</a></li>
+                                <li style="float:left"><a href="#Khuyenmai" style="color:orangered;padding:5px" class="fas fa-gift">Khuyến mại</a></li>
+                                <li style="float:left"><a href="#Gopy" style="color:darkturquoise;padding:5px" class="far fa-comment">Góp ý</a></li>
+                                <li style="float:left"><a href="#Hoadon" style="color:darkturquoise;padding:5px" class="far fa-clipboard">Hóa đơn</a></li>
+                                <li style="float:left"><a href="#Tintuc" style="color:darkturquoise;padding:5px" class="fas fa-clipboard-list">Tin tức</a></li>
+                                <li style="float:left"><a href="#Timsieuthi" style="color:darkturquoise;padding:5px" class="fas fa-map-marker-alt">Tìm siêu thị</a></li>
+                            </ul>
+                            <div class="search-area" style="display: block; width: 100%;">
+                                <form class="example">
+                                    <input type="text" placeholder="Nhập thông tin tìm kiếm..." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div id="notify-box">
+                            <ul>
+                                <li class="cart-box ">
+                                    <a class="" href="/cart" rel="nofollow">
+                                        <i class="fa fa-cart-arrow-down  notifycation"></i>Giỏ hàng
+                                        <span class="notify-count" id="count_shopping_cart">0</span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="/tin-tuc/tin-khuyen-mai" title="">Khuyến mãi</a>
+                                <li class="help-box">
+                                    <a href="/30s-huong-dan-mua-hang-online.html" rel="nofollow" title="Hướng dẫn mua hàng">
+                                        <i class="fas fa-clipboard-list  notifycation"></i>Hướng dẫn
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="/tin-tuc/thu-thuat" title="">Thủ thuật</a>
-                                </li>
-                                <li>
-                                    <a href="/tin-tuc/for-gamers" title="">For Gamers</a>
-                                </li>
-                                <li>
-                                    <a href="/tin-tuc/video-review" title="">Video hot</a>
-                                </li>
-                                <li>
-                                    <a href="/tin-tuc/goc-khach-hang" title="">Góc khách hàng</a>
-                                </li>
-                                <li>
-                                    <a href="/tin-tuc/xu-huong" title="">Xu hướng</a>
-                                </li>
-                                <li>
-                                    <a href="/tin-tuc/giai-tri" title="">Giải trí</a>
+                                <li class="support-box">
+                                    <a href="/27s-chinh-sach-ho-tro.html" rel="nofollow" title="Chính sách hỗ trợ">
+                                        <i class="fas fa-phone  notifycation"></i>
+                                        Hỗ trợ
+                                    </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="/ffriends" title="ffriends">
-                                <i class="ficon f-mtts"></i>
-                                <span>Mua trước trả sau</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/gio-hang-v2" title="">
-                                <i class="ficon f-cart"></i>
-                                <span>Giỏ hàng</span>
-                                <b class="fs-cartic countTotalCart" style="display: none;">0</b>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="fs-search">
-                        <form>
-                            <input class="fs-stxt" type="text" placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm" autocomplete="off" maxlength="50">
-                            <button type="submit" class="search-button">
-                                <i class="ficon f-search"></i>
-                            </button>
-                            <div class="fs-sresult" style="display : block !important">
-                                <div class="fs-sremain">
-                                    <ul style="display: none;"></ul>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <nav class="fpt-menu">
-                <div class="fpt-wrap">
-                    <ul class="fs-mnul clearfix">
-                        <li>
-                            <a href="/dien-thoai" title="ĐIỆN THOẠI">
-                                <i class="ficon f-dthoai"></i>ĐIỆN THOẠI
-                                <span class="ficon"></span>
-                            </a>
-                            <div class="fs-mnsub">
-                                <div class="fs-mnbox">
-                                    <div class="fs-mntd fs-mntd1">
-                                        <p class="fs-mnstit">Hãng sản xuất</p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Apple (iPhone)">Apple (iPhone)</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/samsung" title="Samsung">Samsung</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/oppo" title="OPPO">OPPO</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/huawei" title="Huawei">Huawei</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/xiaomi" title="Xiaomi">Xiaomi</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/vsmart" title="VSmart">VSmart</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/nokia" title="Nokia">Nokia</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/honor" title="HONOR">HONOR</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/vivo" title="Vivo">Vivo</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/realme" title="Realme">Realme</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/asus" title="Asus">Asus</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/wiko" title="Wiko">Wiko</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/masstel" title="Masstel">Masstel</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/itel" title="Itel">Itel</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/mobiistar" title="Mobiistar">Mobiistar</a>
-                                            </li>
-                                        </ul>
+                <div class="sub-header col-md-5 col-sm-5 col-xs-12">
+                    <div class="row sidebar-box red">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="menu-box open">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <div class="sidebar-box-heading">
+                                        <h4><i class="fa fa-list list-icon-menu"></i>Danh mục mặt hàng</h4>
                                     </div>
-                                    <div class="fs-mntd fs-mntd2">
-                                        <p class="fs-mnstit">Mức giá</p>
-                                        <ul class="fs-mnsul fs-mnsul1 clearfix">
-                                            <li>
-                                                <a href="/dien-thoai/duoi-1-trieu" title="Dưới 1 triệu">Dưới 1 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/tu-1-3-trieu" title="Từ 1 - 3 triệu">Từ 1 - 3 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/tu-3-6-trieu" title="Từ 3 - 6 triệu">Từ 3 - 6 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/tu-6-10-trieu" title="Từ 6 - 10 triệu">Từ 6 - 10 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/tu-10-15-trieu" title="Từ 10 - 15 triệu">Từ 10 - 15 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/tren-15-trieu" title="Trên 15 triệu">Trên 15 triệu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd3">
-                                        <p class="fs-mnstit">Bán chạy nhất</p>
-                                        <ul class="fs-mnsprod">
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/dien-thoai/oppo-f9">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/12/21/636809782352174184_oppo-f9-daidien.png" alt="OPPO F9">
-                                                </a>
-                                                <div>
-                                                    <span>
-                                                        <a href="/dien-thoai/oppo-f9" title="">OPPO F9</a>
-                                                    </span>
-                                                    <p>6.990.000 ₫</p>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/dien-thoai/samsung-galaxy-j6-2018">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/5/23/636626649161305672_1o.png" alt="Samsung Galaxy J6 (2018)">
-                                                </a>
-                                                <div>
-                                                    <span>
-                                                        <a href="/dien-thoai/samsung-galaxy-j6-2018" title="">Samsung Galaxy J6 (2018)</a>
-                                                    </span>
-                                                    <p>3.990.000 ₫</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd4">
-                                        <a target="_blank" href="https://fptshop.com.vn/ctkm/uu-dai-samsung" title="Samsung trợ giá H4">
-                                            <img src="//cdn.fptshop.com.vn/Uploads/Originals/2018/10/3/636741614288912853_Banner 248x248.jpg" alt="Samsung trợ giá H4">
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li data-submenu-id="submenu-84" class="submenu-84">
+                                        <a href="/dien-tu-nhom-84.html" title="Điện tử">
+                                            <img src="~/Content/images/dientu.png" />
+                                            <strong>Điện tử</strong>
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/may-tinh-xach-tay" title="">
-                                <i class="ficon f-laptop"></i> LAPTOP
-                                <span class="ficon"></span>
-                            </a>
-                            <div class="fs-mnsub">
-                                <div class="fs-mnbox">
-                                    <div class="fs-mntd fs-mntd1">
-                                        <p class="fs-mnstit">Hãng sản xuất</p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/apple-macbook" title="Apple (Macbook)">Apple (Macbook)</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/asus" title="Asus">Asus</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/acer" title="Acer">Acer</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/dell" title="Dell">Dell</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/hp" title="HP">HP</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/lenovo" title="Lenovo">Lenovo</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/msi" title="MSI">MSI</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/masstel" title="Masstel">Masstel</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/haier" title="Haier">Haier</a>
-                                            </li>
-                                        </ul>
-                                        <p class="fs-mnstit">
-                                            <a href="/phan-mem">PHẦN MỀM</a>
-                                        </p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/phan-mem/diet-virus" title="Phần mềm Diệt Virus">Diệt Virus</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phan-mem/microsoft-office" title="Phần mềm Microsoft Office">Microsoft Office</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phan-mem/windows" title="Phần mềm windows">Windows</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phan-mem/phan-mem-khac" title="Phần mềm Phần mềm khác">Phần mềm khác</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd2">
-                                        <p class="fs-mnstit">Mức giá</p>
-                                        <ul class="fs-mnsul fs-mnsul1 clearfix">
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/duoi-5-trieu" title="Dưới 5 triệu">Dưới 5 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tu-5-10-trieu" title="Từ 5 - 10 triệu">Từ 5 - 10 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tu-10-15-trieu" title="Từ 10 - 15 triệu">Từ 10 - 15 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tu-15-20-trieu" title="Từ 15 - 20 triệu">Từ 15 - 20 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tu-20-25-trieu" title="Từ 20 - 25 triệu">Từ 20 - 25 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tu-25-30-trieu" title="Từ 25 - 30 triệu">Từ 25 - 30 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/tren-30-trieu" title="Trên 30 triệu">Trên 30 triệu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd3">
-                                        <p class="fs-mnstit">Mục đích sử dụng</p>
-                                        <ul class="fs-mnsul fs-mnsul1 clearfix">
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/san-pham-2-trong-1" title="Sản phẩm 2 trong 1">Sản phẩm 2 trong 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/windows" title="Windows">Windows</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/gia-re" title="Giá rẻ">Giá rẻ</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/hien-dai" title="Hiện đại">Hiện đại</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/sinh-vien-van-phong" title="Sinh viên - Văn phòng">Sinh viên - Văn phòng</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/gaming-do-hoa" title="Gaming - Đồ họa">Gaming - Đồ họa</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/mong-nhe" title="Mỏng nhẹ">Mỏng nhẹ</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd4">
-                                        <a target="_blank" href="https://fptshop.com.vn/mua-laptop-den-fptshop" title="Laptop Giá Rẻ Tháng 1 H4">
-                                            <img src="//cdn.fptshop.com.vn/Uploads/Originals/2019/1/14/636830540833075683_H4.png" alt="Laptop Giá Rẻ Tháng 1 H4">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="http://fstudiobyfpt.com.vn/" title=""><i class="ficon f-apple"></i> APPLE <span class="ficon"></span></a>
-                            <div class="fs-mnsub">
-                                <div class="fs-mnbox">
-                                    <div class="fs-mntd fs-mntd1">
-                                        <p class="fs-mnstit">Các sản phẩm Apple</p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="iPhone">iPhone</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/apple-ipad" title="iPad">iPad</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-xach-tay/apple-macbook" title="Mac">Macbook</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-de-ban/imac" title="imac">iMac</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-de-ban/mac-mini" title="Mac-mini">Mac mini</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-de-ban/mac-pro" title="Mac-pro">Mac Pro</a>
-                                            </li>
-                                            <li>
-                                                <a href="/smartwatch/apple" title="Watch">Watch</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/apple-tv" title="Apple TV">Apple TV</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/phu-kien-apple" title="Phụ kiện">Phụ kiện</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/beats" title="Beats">Beats</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd2">
-                                        <p class="fs-mnstit">Mức giá</p>
-                                        <ul class="fs-mnsul fs-mnsul1 clearfix">
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Dưới 10 triệu">Dưới 10 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Từ 10 - 15 triệu">Từ 10 - 15 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Từ 15 - 20 triệu">Từ 15 - 20 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Từ 20 - 25 triệu">Từ 20 - 25 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Từ 25 - 30 triệu">Từ 25 - 30 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/dien-thoai/apple-iphone" title="Trên 30 triệu">Trên 30 triệu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd3">
-                                        <p class="fs-mnstit">Bán chạy nhất</p>
-                                        <ul class="fs-mnsprod">
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/dien-thoai/iphone-6-32gb">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/5/18/636622605489276625_6-32.png" alt="iPhone 6 32GB (2017)">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/dien-thoai/iphone-6-32gb" title="">iPhone 6 32GB (2017)</a></span>
-                                                    <p>6.990.000 ₫</p>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/may-tinh-bang/iPad-2018-WiFi-32gb">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/10/24/636759749550391496_ipad-2018.png" alt="iPad 2018 WiFi 32GB">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/may-tinh-bang/iPad-2018-WiFi-32gb" title="">iPad 2018 WiFi 32GB</a></span>
-                                                    <p>8.990.000 ₫</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd4">
-                                        <a target="_blank" href="https://fptshop.com.vn/dien-thoai/iphone-xs" title="KM Apple tháng">
-                                            <img src="//cdn.fptshop.com.vn/Uploads/Originals/2019/1/2/636820235105041357_Banner-iPhone-XS.png" alt="KM Apple tháng">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/may-tinh-bang" title="">
-                                <i class="ficon f-tablet"></i> TABLET
-                                <span class="ficon"></span>
-                            </a>
-                            <div class="fs-mnsub">
-                                <div class="fs-mnbox">
-                                    <div class="fs-mntd fs-mntd1">
-                                        <p class="fs-mnstit">Hãng sản xuất</p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/may-tinh-bang/apple-ipad" title="Apple (iPad)">Apple (iPad)</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/samsung" title="Samsung">Samsung</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/lenovo" title="Lenovo">Lenovo</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/masstel" title="Masstel">Masstel</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/huawei" title="Huawei">Huawei</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/itel" title="Itel">Itel</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd2">
-                                        <p class="fs-mnstit">Mức giá</p>
-                                        <ul class="fs-mnsul fs-mnsul1 clearfix">
-                                            <li>
-                                                <a href="/may-tinh-bang/duoi-2-trieu" title="Dưới 2 triệu">Dưới 2 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/tu-2-trieu-den-5-trieu" title="Từ 2 triệu đến 5 triệu">Từ 2 triệu đến 5 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/tu-5-trieu-den-8-trieu" title="Từ 5 triệu đến 8 triệu">Từ 5 triệu đến 8 triệu</a>
-                                            </li>
-                                            <li>
-                                                <a href="/may-tinh-bang/tren-8-trieu" title="Trên 8 triệu">Trên 8 triệu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd3">
-                                        <p class="fs-mnstit">Bán chạy nhất</p>
-                                        <ul class="fs-mnsprod">
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/may-tinh-bang/samsung-galaxy-tab-A105">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/9/2/636714822093598058_taba105-1o.png" alt="Samsung Galaxy Tab A 10.5">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/may-tinh-bang/samsung-galaxy-tab-A105" title="">Samsung Galaxy Tab A 10.5</a></span>
-                                                    <p>9.490.000 ₫</p>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/may-tinh-bang/huawei-mediapad-t3-70-prestige">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2017/10/24/636444518526948294_Huawei-MediaPad-T3-7.0-Prestige.png" alt="Huawei MediaPad T3 7.0 Prestige">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/may-tinh-bang/huawei-mediapad-t3-70-prestige" title="">Huawei MediaPad T3 7.0 Prestige</a></span>
-                                                    <p>2.090.000 ₫</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd4">
-                                        <a target="_blank" href="https://fptshop.com.vn/may-tinh-bang" title="Tablet">
-                                            <img src="//cdn.fptshop.com.vn/Uploads/Originals/2018/12/10/636800382970194963_H4.png" alt="Tablet">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/phu-kien" title="">
-                                <i class="ficon f-pkien"></i> PHỤ KIỆN
-                                <span class="ficon"></span>
-                            </a>
-                            <div class="fs-mnsub">
-                                <div class="fs-mnbox">
-                                    <div class="fs-mntd fs-mntd1">
-                                        <p class="fs-mnstit">Các sản phẩm Phụ Kiện</p>
-                                        <ul class="fs-mnsul fs-mnsul3 clearfix">
-                                            <li>
-                                                <a href="/phu-kien/bao-da-op-lung" title="Bao da ốp lưng">Bao da ốp lưng</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/sac-du-phong" title="Sạc dự phòng">Sạc dự phòng</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/the-nho" title="Thẻ nhớ">Thẻ nhớ</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/phu-kien-apple" title="Phụ kiện Apple">Phụ kiện Apple</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/mieng-dan-man-hinh" title="Miếng dán màn hình">Miếng dán màn hình</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/tai-nghe" title="Tai nghe">Tai nghe</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/loa" title="Loa">Loa</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/usb-o-cung" title="USB - Ổ cứng">USB - Ổ cứng</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/sac-cap" title="Sạc cáp">Sạc cáp</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/chuot" title="Chuột">Chuột</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/balo-tui-xach" title="Balo - Túi xách">Balo - Túi xách</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/tv-box" title="TV BOX">TV BOX</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/phu-kien-khac" title="Phụ kiện khác">Phụ kiện khác</a>
-                                            </li>
-                                            <li>
-                                                <a href="/phu-kien/may-choi-game" title="Máy chơi game">Máy chơi game</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd3">
-                                        <p class="fs-mnstit">Bán chạy nhất</p>
-                                        <ul class="fs-mnsprod">
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/phu-kien/MDMH-iPhone-X-Kinh-cuong-luc-Clear">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/1/25/636524432304682928_636482583480745126_P1510979240_mieng-dan-kinh-cuong-luc-iphone-x-nillkin-amazing-h-pro-1-(1).jpg" alt="MDMH iPhone X Kính cường lực Clear">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/phu-kien/MDMH-iPhone-X-Kinh-cuong-luc-Clear" title="">MDMH iPhone X Kính cường lực Clear</a></span>
-                                                    <p>190.000 ₫</p>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a class="fs-mnspimg" href="/phu-kien/mic-karaoke-kem-loa-bluetooth-va-sdp-icore-m9">
-                                                    <img src="//cdn.fptshop.com.vn/Uploads/Thumbs/2018/11/12/636776407035280282_mic-icore.png" alt="Mic Karaoke kèm loa Bluetooth và SDP iCore M9">
-                                                </a>
-                                                <div>
-                                                    <span><a href="/phu-kien/mic-karaoke-kem-loa-bluetooth-va-sdp-icore-m9" title="">Mic Karaoke kèm loa Bluetooth và SDP iCore M9</a></span>
-                                                    <p>750.000 ₫</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="fs-mntd fs-mntd4">
-                                        <a target="_blank" href="https://fptshop.com.vn/phu-kien" title="Khuyến mãi hot nhất">
-                                            <img src="//cdn.fptshop.com.vn/Uploads/Originals/2019/1/2/636820212388054417_248x248.png" alt="Khuyến mãi hot nhất">
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/may-doi-tra" title="">
-                                <i class="ficon f-mdt"></i> MÁY ĐỔI TRẢ
-                            </a>
-                        </li>
-                        <li class="fs-mnulsb">
-                            <a href="/sim-so-dep" title="">
-                                <i class="ficon f-simthe"></i> SIM &amp; THẺ
-                                <span class="ficon"></span>
-                            </a>
-                        </li>
-                        <li class="fs-mnulsb">
-                            <a href="/khuyen-mai" title="">
-                                <i class="ficon f-kmai"></i> KHUYẾN MÃI
-                            </a>
-                            <ul class="fs-hdmsub fs-hdmsubsmall">
-                                <li>
-                                    <a href="/khuyen-mai/thong-tin-trao-thuong" title="">Thông tin trao thưởng</a>
-                                </li>
-                                <li>
-                                    <a href="/khuyen-mai" title="">Tất cả khuyến mại</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/ctkm/tra-gop-uu-dai" title="">
-                                <i class="ficon f-tho"></i> TRẢ GÓP 0%
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="fpt-main">
-                <div class="fpt-wrap">
-                    <div class="fpt-sim">
-                        <img class="pink" src="~/Content/images/nhapnhanh.svg" alt="" width="30" height="30">
-                        <p><strong>Vinaphone tặng 20%</strong>&nbsp;giá trị thẻ nạp cho thuê bao trả trước trong ngày&nbsp;<strong>18/01</strong>.</p>
-                        <a class="fpt-simbtn" href="/sim-so-dep" title="Nạp thẻ ngay">Nạp thẻ ngay!</a>
-                    </div>
-                    <section class="col-md-8 col-sm-12 col-xs-12">
-                        <section class="slidebar-slider">
-                            <div class="slidebar-flexslider flexslider">
-                                <div class="flex-viewport" style="overflow:hidden;position:relative;margin:20px 0px 0px 0px;">
-                                    <ul class="slides" style="width:1300%;transition-duration:0.6s; transform:translate(-4662px,0px,0px)">
-                                        <li class="clone" style="float:left; display:block; width:670px;">
-                                            <img class="img-responsive" style="width:730px;" src="~/Content/images/636831076646795659_H1.png" />
-                                        </li>
-                                    </ul>
-                                    <div id="fowl2" class="owl-carousel f-slml owl-loaded">
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 801px;">
-                                                <div class="owl-item active" style="width: 114.286px;left: 39px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>iPhone giảm<br>sốc 4 triệu</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 114.286px;left: 24px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Tết OPPO lì xì<br>tới 1 triệu</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 114.286px;left:28px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Samsung<br>Galaxy A7</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 114.286px; left: 3px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Sắm Vivo tặng<br>ngay bia tết</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active current" style="width: 114.286px;right: -6px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Tết Xiaomi</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 114.286px;right:20px">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Tết Laptop</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 114.286px;right:49px;">
-                                                    <div class="item">
-                                                        <h3>
-                                                            <span>Ốp lưng Tết<br>chỉ 20.000đ</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="guide">
+                                            <a href="/tivi-nhom-157.html" title="Tivi" class="">Tivi</a>,
+                                            <a href="/truyen-hinh-so-nhom-410.html" title="Truyền hình số" class="">Truyền hình số</a>,
+                                            <a href="/dau-phat-hd-smart-box-nhom-159.html" title="Đầu phát HD, Smart Box" class="">Smart Box</a>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                    <li data-submenu-id="submenu-70" class="submenu-70">
+                                        <a href="/dien-lanh-nhom-70.html" title="Điện lạnh">
+                                            <img src="~/Content/images/dienlanh.png" />
+                                            <strong class="submenu-title">Điện lạnh</strong>
+                                        </a>
+                                        <div class="guide">
+                                            <a href="/dieu-hoa-nhom-73.html" title="Điều hòa, máy lạnh" class="">Điều hòa</a>,
+                                            <a href="/tu-lanh-nhom-71.html" title="Tủ lạnh" class="">Tủ lạnh</a>,
+                                            <a href="/tu-lanh-nhom-71.html?&amp;filter=:4673:" title="Tủ Nhật" class=""><img src="~/Content/images/hot.gif" alt="Tủ Nhật"> Tủ Nhật</a>,
+                                            <a href="/may-giat-nhom-72.html" title="Máy giặt" class="">Máy giặt</a>
+                                        </div>
+                                    </li>
+                                    <li data-submenu-id="submenu-65" class="submenu-65">
+                                        <a href="/gia-dung-nhom-65.html" title="Đồ gia dụng" class="maintainHover">
+                                            <img src="~/Content/images/dogiadung.png" />
+                                            <strong class="submenu-title">Đồ gia dụng</strong>
+                                        </a>
+                                        <div class="guide">
+                                            <a href="/lo-vi-song-nhom-137.html" title="Lò vi sóng" class="maintainHover">Lò vi sóng</a>,
+                                            <a href="/binh-tam-nong-lanh-nhom-146.html?&amp;filter=:4659:" title="Bình tắm gián tiếp" class="maintainHover">Bình tắm gián tiếp</a>,
+                                            <a href="/may-suoi--den-suoi-nha-tam-nhom-130.html?&amp;filter=:3704:" title="Quạt sưởi" class="maintainHover">Quạt sưởi</a>
+                                        </div>
+                                    </li>
+                                    <li data-submenu-id="submenu-236" class="submenu-236">
+                                        <a href="/am-thanh-nhom-236.html" title="Âm thanh">
+                                            <img src="~/Content/images/amthanh.png" />
+                                            <strong class="submenu-title">Âm thanh</strong>
+                                        </a>
+                                        <div class="guide">
+                                            <a href="/thiet-bi-karaoke-nhom-244.html" title="Thiết bị Karaoke">Karaoke</a>,
+                                            <a href="/dan-am-thanh-nhom-98.html" title="Dàn âm thanh">Dàn âm thanh</a>,
+                                            <a href="/loa-hiend-hifi-nhom-95.html" title="Loa Hi-End, Hi-Fi">Hi-End, Hi-Fi</a>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </section>
-                    </section>
-                    <aside class="sidebar-banner sidebar-banner-home col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="banner">
-                                <div class="col-md-12 ">
-                                    <a target="_blank" href="https://fptshop.com.vn/dien-thoai/honor-play" title="Honor Tết_T1_H2">
-                                        <img c src="~/Content/images/636820386711838981_H2-Laptop Gaming - Section1.png" alt="Honor Tết_T1_H2" style="height:102px"/>
-                                    </a>
-                                </div>
-                                <div class="col-md-12 " style="position: absolute; top: 107px;width: 439px;">
-                                    <a target="_blank" href="https://fptshop.com.vn/laptop-gaming" title="Laptop Gaming H2">
-                                        <img  src="~/Content/images/636833448109016061_H2.png" alt="Laptop Gaming H2" style="height:94px"/>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
-                    </aside>
-                    <div class="col-md-12 col-sm-6 col-xs-12">
-                        <div class="col-md-4 alay">
-                            <h3>TIN CÔNG NGHỆ NỔI BẬT</h3>
-                            <a href="/tin-tuc" target="_blank" title="">Xem tất cả</a>
-                        </div>
-                        <div class="col-md-4 piker">
-                            <a class="clearfix" href="/tin-tuc/tin-moi/hot-hinh-anh-tren-tay-galaxy-s10-bat-ngo-ro-ri-thuc-te-79248" title="[HOT] Hình ảnh trên tay Galaxy S10 + bất ngờ rò rỉ thực tế">
-                                <span>
-                                    <img class="img-responsive" style="width: 80px;" src="~/Content/images/636834047537271625_galaxy-s10-cover.jpg" />
-                                </span>
-                                <h3 style="position: absolute; font-size: 14px;color: #1f1f1f;height: 40px;top: -18px;line-height: 1.43;right: 43px;display: block;">[HOT] Hình ảnh trên tay Galaxy S10 +<br> bất ngờ rò rỉ thực tế</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 linker">
-                            <a class="clearfix" href="/tin-tuc/danh-gia/chiem-nguong-ve-dep-hut-hon-cua-vivo-y91-phien-ban-aura-blue-78950" title="Chiêm ngưỡng vẻ đẹp hút hồn của Vivo Y91 phiên bản Aura Blue">
-                                <span>
-                                    <img class="img-responsive" style="width: 80px;" src="~/Content/images/636833367182650545_galaxy-s10-plus-fptshop.jpg" />
-                                </span>
-                                <h3 style="font-size: 14px; position: absolute;top: -12px;line-height: 1.43;left: 117px;">Chiêm ngưỡng vẻ đẹp hút hồn của<br>Vivo Y91 phiên bản Aura Blue</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sp-inline-wrap sp-inline-wrap-870 sp-advanced-css-870" style="visibility: visible; margin-left: 0px; margin-top: 0px; box-shadow: none; border-radius: 0px; border-width: 1px; border-color: rgb(51, 51, 51); display: inline-block;">
-                        <iframe class="sp-inline-iframe sp-inline-iframe-870" style="display: block; visibility: visible; width: 0px; height: 0px; border: none; border-radius: 0px;" src="https://fptshop.api.useinsider.com/frame.php?viewType=1&amp;id=870&amp;appType=24&amp;pageUrl=https%3A%2F%2Ffptshop.com.vn%2F&amp;version=1547865100" frameborder="0"></iframe>
-                    </div>
-                    <div style="padding:0px 0px 18px 0px;">
-                        <a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-note-9" target="_blank">
-                            <img class="img-responsive" src="~/Content/images/636820918985512660_H5.png" style="padding-left: 53PX; padding-top: 50px; width: 97%;height:120px; left: 45px;"/>
-                        </a>
                     </div>
                 </div>
-            </div>
+                <div id="top-header">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <div class="contact-row">
+                            <div class="phone">
+                                <i class="fa fa-phone-square"></i>
+                                <a href="tel:19006619"><span>1900.6619</span></a> -
+                                <a href="tel:+84904881169"><span>0904.881169</span></a> (8h15 - 17h30)
+                            </div>
+                            <div class="login-account">
+                                <a href="/login" title="Đăng nhập" rel="nofollow" class="blue">Đăng nhập</a>
+                                <span>&nbsp;hoặc&nbsp;</span>
+                                <a href="/register" title="Đăng ký" rel="nofollow" class="blue">Đăng ký</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
     </div>
-  @RenderBody()
+    @RenderBody()
+    <!--footer-->
     <div class="footer">
-        <div class="row multipe">
-            <div class="fs-ftcol fs-ftcol1">
-                <ul class="fs-ftul">
-                    <li>
-                        <a target="_blank" rel="nofollow" href="http://frt.vn/">Giới thiệu về công ty</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/huong-dan/cau-hoi-thuong-gap" title="Câu hỏi thường gặp mua hàng">Câu hỏi thường gặp mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/ho-tro/chinh-sach-bao-mat" title="">Các chính sách FPT Shop</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/tos" title="">Quy chế hoạt động</a>
-                    </li>
-                    <li>
-                        <a href="http://hddt.fptshop.com.vn/" title="">Kiểm tra hóa đơn điện tử</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/kiem-tra-bao-hanh?tab=thong-tin-bao-hanh" title="">Tra cứu thông tin bảo hành</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 banner">
+                    <a href="http://pico.vn/gia-re-moi-ngay" class="col-md-4 " target="_blank">
+                        <div class="banner-item  orange">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <h4>Vận chuyển </h4>
+                                <p>Miễn phí Bán kính 200KM</p>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <span class="button" name="bn">Xem</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://pico.vn/gia-re-moi-ngay" class="col-md-4 " target="_blank">
+                        <div class="banner-item  light-blue">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <i class="fa fa-credit-card"></i>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <h4>Thanh toán cod</h4>
+                                <p>Thanh toán trực tiếp khi nhận hàng</p>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <span class="button">Xem</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://pico.vn/gia-re-moi-ngay" class="col-md-4" target="_blank">
+                        <div class="banner-item  gray">
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <h4>Đổi trả hàng</h4>
+                                <p>Thời gian đổi trả hàng lên đến 30 ngày</p>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <i class="fas fa-sync">
+                                </i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /Banner -->
             </div>
-            <div class="fs-ftcol fs-ftcol1">
-                <ul class="fs-ftul">
-                    <li>
-                        <a href="//vieclam.fptshop.com.vn/">Tin tuyển dụng</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/tin-tuc/Tin-khuyen-mai" title="">Tin khuyến mãi</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/huong-dan/huong-dan-mua-hang" title="">Hướng dẫn mua online</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/tra-gop" title="">Hướng dẫn mua trả góp</a>
-                    </li>
-                    <li>
-                        <a href="https://fptshop.com.vn/ho-tro/chinh-sach-tra-gop" title="">Chính sách trả góp</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="fs-ftcol fs-ftcol1">
-                <ul class="fs-ftul">
-                    <li>
-                        <a href="//fptshop.com.vn/cua-hang">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/ho-tro/chinh-sach-bao-hanh" title="">Hệ thống bảo hành</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/kiem-tra-hang-apple-chinh-hang" title="">Kiểm tra hàng Apple chính hãng</a>
-                    </li>
-                    <li>
-                        <a href="//fptshop.com.vn/ho-tro/gioi-thieu-may-doi-tra" title="">Giới thiệu máy đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="https://fptshop.com.vn/ho-tro/chinh-sach-doi-san-pham" title="">Chính sách đổi trả</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="fs-ftcol  fs-ftcol2">
-            <ul class="fs-ftr2 clearfix">
-                <li> 
-                <p>Tư vấn mua hàng (Miễn phí)</p> 
-                <a href="tel:18006601" title="">1800 6601</a> 
-                    </li>
-                <li> 
-                <p>Góp ý, khiếu nại dịch vụ (8h00-22h00)</p> 
-                <a href="tel:18006616" title="">1800 6616</a> 
-                    </li>
-                </ul>
-            <div class="fs-ftrright">
-                <div class="fs-ftr1">
-                <p class="fs-ftrtit">Hỗ trợ thanh toán:</p>
-                <a class="fs-ftr-vs" href="javascript:;" title="">
-                    <img src="~/Content/images/visa.png" />
-                </a>
-                <a class="fs-ftr-mt" href="javascript:;" title="">
-                    <img src="~/Content/images/mastercard.png" />
-                </a>
-                <a class="fs-ftr-atm" href="javascript:;" title="">
-                    <img src="~/Content/images/ATM.png" />
-                </a>
+            <div class="upper-footer col-md-12 col-sm-12 col-xs-12">
+                <div id="upper-footer" style="background: #fff;padding: 5px 20px;border-bottom: 1px solid #dfe6f3;">
+                    <div class="row">
+                        <!-- Newsletter -->
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <form class="newsletter">
+                                <h4>Nhận bản tin</h4>
+                                <input type="text" placeholder="Nhập e-mail nhận bản tin khuyến mại...">
+                                <input type="button" onclick="subcribeNewsletter($('#newsletter'))" name="newsletter-submit" value="Đăng ký">
+                            </form>
+                        </div>
+                        <!-- /Newsletter -->
+                        <!-- Social Media -->
+                        <div class="col-md-3 col-sm-3 col-xs-12 social-media">
+                            <h4>FOLLOW US</h4>
+                            <ul>
+                                <li class="social-googleplus tooltip-hover" data-toggle="tooltip" data-placement="top" title="Google+">
+                                    <a href="https://plus.google.com/+PicoJsc" target="_blank"></a>
+                                </li>
+                                <li class="social-facebook tooltip-hover" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <a href="http://www.facebook.com/dienmaypico" target="_blank"></a>
+                                </li>
+                                <li class="social-youtube tooltip-hover" data-toggle="tooltip" data-placement="top" title="Youtube">
+                                    <a href="https://www.youtube.com/congtypico" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Social Media -->
                     </div>
-                <div class="fs-ftr3">
-                <p class="fs-ftrtit">Chứng nhận:</p>
-                <ul>
-                    <li>
-                    <a class="fs-ftr-cthuong" href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=21891" title="">
-                        <img src="~/Content/images/thongbao.png" />
-                    </a>
-                        </li>
-                    <li>
-                    <a class="fs-ftr-dmca" href="javascript:;" title="">
-                        <img src="~/Content/images/IDMCA.png" />
-                    </a>
-                        </li>
-                    <li>
-                    <a class="fs-ftr-sp" href="javascript:;" title="">
-                        <img src="~/Content/images/sanphamdichvu.png" />
-                    </a>
-                        </li>
-                    <li>
-                    <a class="fs-ftr-thieuvn" href="javascript:;" title="">
-                        <img src="~/Content/images/chungnhanvietnam.png" />
-                    </a>
-                        </li>
-                    </ul>
+                </div>
+            </div>
+            <div class="main-footer col-md-12 col-sm-12 col-xs-12">
+                <div id="main-footer">
+                    <div class="row">
+                        <!-- The Service -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h4>PICO.VN</h4>
+                            <ul>
+                                <li>
+                                    <a href="/lich-su-cong-ty.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Giới thiệu hệ thống siêu thị
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/he-thong-sieu-thi" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Địa chỉ chuỗi siêu thị
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tuyen-dung" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Tuyến dụng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/members" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Thẻ thành viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/trung-tam-bao-hanh" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Điểm bảo hành hãng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /The Service -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h4>Chính sách &amp; Quy định</h4>
+                            <ul>
+                                <li>
+                                    <a href="/32s-dieu-khoan-bao-mat.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/7s-chinh-sach-van-chuyen-hang.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>
+                                        Chính sách vận chuyển
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/1s-chinh-sach-bao-hanh.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Chính sách bảo hành
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/11s-chinh-sach-doi-hang.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Chính sách đổi, trả hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/35s-quy-dinh-thanh-toan.html" rel="nofollow">
+                                        <i class="fas fa-caret-right">
+                                        </i>Quy định thanh toán
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Information -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h4>Hướng dẫn sử dụng</h4>
+                            <ul>
+                                <li>
+                                    <a href="/30s-huong-dan-mua-hang-online.html" rel="nofollow">
+                                        <i class="fas fa-caret-right" rel="nofollow">
+                                        </i>Hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/6s-cac-hinh-thuc-thanh-toan.html" rel="nofollow">
+                                        <i class="fas fa-caret-right" rel="nofollow">
+                                        </i>Hướng dẫn thanh toán
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/54s-huong-dan-su-dung-hoa-don-dien-tu-invoice.html" rel="nofollow">
+                                        <i class="fas fa-caret-right" rel="nofollow">
+                                        </i>Hướng dẫn sử dụng HĐĐT
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Information -->
+                        <!-- Contact Us -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 contact-footer-info">
+                            <h4>Liên hệ</h4>
+                            <ul>
+                                <li style="margin:0px 0px 0px 23px;color: #596067;">
+                                    Tổng đài bán hàng (8:15 - 18:00)
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:19006619" rel="nofollow">
+                                        <strong>1900.6619</strong>
+                                    </a>, hoặc:
+                                    <a href="tel:+84904881169" rel="nofollow">
+                                        <b>0904.881169</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:online@pico.com.vn" rel="nofollow">
+                                        online@pico.com.vn
+                                    </a>
+                                </li>
+                                <li style="margin:0px 0px 0px 23px;color: #596067;">
+                                    Tổng đài CSKH (8:15 - 21:30)
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:19006699" rel="nofollow">
+                                        <strong>1900.6699</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:chamsockhachhang@pico.com.vn" rel="nofollow">
+                                        chamsockhachhang@pico.com.vn
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:webmaster@pico.vn" rel="nofollow">webmaster@pico.vn</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Contact Us -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="00999_STORE-PICO">
+                    <div class="store-pico">
+                        <h2>Hệ thống Siêu Thị Điện Máy Pico trên toàn quốc</h2>
+                    </div>
+                    <div class="store-active">
+                        <ul>
+                            <li id="1">
+                                <a href="javascript:void(0);" data-id="1">
+                                    Hà Nội
+                                    <label>12</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="6">
+                                <a href="javascript:void(0);" data-id="2">
+                                    Hải Phòng
+                                    <label>2</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="10">
+                                <a href="javascript:void(0);" data-id="3">
+                                    Ninh Bình
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="16">
+                                <a href="javascript:void(0);" data-id="4">
+                                    Phú Thọ
+                                    <label>2</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="19">
+                                <a href="javascript:void(0);" data-id="5">
+                                    Bắc Giang
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="22">
+                                <a href="javascript:void(0);" data-id="6">
+                                    Bắc Ninh
+                                    <label>2</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="36">
+                                <a href="javascript:void(0);" data-id="7">
+                                    Hà Nam
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="48">
+                                <a href="javascript:void(0);" data-id="8">
+                                    Nam Định
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="61">
+                                <a href="javascript:void(0);" data-id="9">
+                                    Thanh Hóa
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                            <li id="67">
+                                <a href="javascript:void(0);" data-id="10">
+                                    Vĩnh Phúc
+                                    <label>1</label>
+                                    <b></b>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="store-drop" id="store-1" style="display: none;">
+                            <a href="https://pico.vn/map/33/pico-ngoc-hoi">
+                                <span>●</span>KM13+500 Quốc lộ 1A, Ngọc Hồi, Thanh Trì, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/34/pico-phuc-dien">
+                                <span>●</span>KM12 Quốc lộ 32, Phúc Diễn, Bắc Từ Liêm, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/36/pico-ha-dong">
+                                <span>●</span>38 Phùng Hưng, Phường Phúc La, Quận Hà Đông, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/37/pico--minh-khai">
+                                <span>●</span>Tầng 01 TTTM V+ Hòa Bình, 505 Minh Khai, Phường Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/38/pico-quang-trung--hn">
+                                <span>●</span>944 Quang Trung, Ba La, P. Yên Nghĩa, Q. Hà Đông, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/32/pico-nguyen-trai-2">
+                                <span>●</span>346 Nguyễn Trãi, Nam Từ Liêm, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/24/so-8-le-trong-tan-thanh-xuan-ha-noi">
+                                <span>●</span>08 Lê Trọng Tấn, quận Thanh Xuân, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/23/so-2-pho-long-bien-2-ngoc-lam-long-bien-ha-noi">
+                                <span>●</span>02 Long Biên 2, Ngọc Lâm, Long Biên, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/1/pico-76-nguyen-trai-thanh-xuan-ha-noi">
+                                <span>●</span>76 Nguyễn Trãi, quận Thanh Xuân, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/3/pico-173-xuan-thuy-cau-giay-ha-noi">
+                                <span>●</span>173 Xuân Thủy, quận Cầu Giấy, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/7/pico-324-tay-son-dong-da-ha-noi">
+                                <span>●</span>324 Tây Sơn, quận Đống Đa, Hà Nội
+                            </a>
+                            <a href="https://pico.vn/map/19/240-ton-duc-thang-dong-da">
+                                <span>●</span>240 Tôn Đức Thắng, quận Đống Đa, Hà Nội
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-2" style="display: none;">
+                            <a href="https://pico.vn/map/28/pico-hai-phong-2">
+                                <span>●</span>04 Bạch Đằng, Hạ Lý, Hồng Bàng, Hải Phòng
+                            </a>
+                            <a href="https://pico.vn/map/21/275-lach-tray--tp-hai-phong">
+                                <span>●</span>Số 275 Lạch Tray, Tp. Hải Phòng, Hải Phòng
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-3" style="display: none;">
+                            <a href="https://pico.vn/map/25/90-le-hong-phong-van-giang-tp-ninh-binh">
+                                <span>●</span>90 Lê Hồng Phong, Vân Giang, Tp. Ninh Bình, Ninh Bình
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-4" style="display: none;">
+                            <a href="https://pico.vn/map/31/pico-viet-tri-02">
+                                <span>●</span>2175 Đại lộ Hùng Vương, Tp. Việt Trì, Phú Thọ
+                            </a>
+                            <a href="https://pico.vn/map/15/pico-1454-hung-vuong-viet-tri-phu-tho">
+                                <span>●</span>1454 Hùng Vương, Việt Trì, Phú Thọ, Phú Thọ
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-5" style="display: none;">
+                            <a href="https://pico.vn/map/26/pico-hoang-van-thu-bac-giang">
+                                <span>●</span>Tòa nhà Hapro, Quảng trường 3/2, Tp. Bắc Giang, Bắc Giang
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-6" style="display: none;">
+                            <a href="https://pico.vn/map/35/pico-bac-ninh-02">
+                                <span>●</span>04 Nguyễn Văn Cừ, P. Ninh Xá, TP Bắc Ninh, Bắc Ninh
+                            </a>
+                            <a href="https://pico.vn/map/22/578-tran-phu-bac-ninh">
+                                <span>●</span>578 Trần Phú, Từ Sơn, Tp. Bắc Ninh, Bắc Ninh
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-7" style="display: none;">
+                            <a href="https://pico.vn/map/30/pico-ha-nam">
+                                <span>●</span>Part Tower đối diện ga Phủ Lý, Lê Hoàn, Phủ Lý, Hà Nam
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-8" style="display: none;">
+                            <a href="https://pico.vn/map/27/pico-nam-dinh">
+                                <span>●</span>87 Quang Trung, P. Quang Trung, Tp. Nam Định, Nam Định
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-9" style="display: none;">
+                            <a href="https://pico.vn/map/29/pico-thanh-hoa">
+                                <span>●</span>240 Lê Hoàn, Ba Đình, TP. Thanh Hóa, Thanh Hóa
+                            </a>
+                        </div>
+                        <div class="store-drop" id="store-10" style="display: none;">
+                            <a href="https://pico.vn/map/18/pico-1-hai-ba-trung-phuc-yen-vinh-phuc">
+                                <span>●</span>01 Hai Bà Trưng, tx. Phúc Yên, Vĩnh Phúc, Vĩnh Phúc
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer col-md-12 col-sm-12 col-xs-12">
+                <div id="lower-footer">
+                    <div class="line-1" >
+                        <div class="payment-list footer-block col-md-5 col-sm-5 col-xs-5">
+                            <span class="title">Chấp nhận thanh toán:</span>
+                            <span class="payment2">
+                                <img src="~/Content/images/visa.png" />
+                            </span>
+                            <span class="payment3">
+                                <img src="~/Content/images/mastercard.png" />
+                            </span>
+                        </div>
+                        <div class="bct-certificate footer-block col-md-2 col-sm-2 col-xs-2">
+                            <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=1051" title="Cục Thương mại điện tử và Công nghệ thông tin – Bộ Công Thương" target="_blank" rel="nofollow">
+                                <span class="ico-bct ico">
+                                    <img src="~/Content/images/bocongthuong.png" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="ssl-certificate footer-block col-md-5 col-sm-5 col-xs-5">
+                            <span class="title">Chứng nhận Website bảo mật:</span>
+                            <a href="https://profile.globalsign.com/SiteSeal/siteSeal/profile/profile.do?p1=91004a46&amp;p2=63ce494fd5ead3f1b1e47eddc2df5669de3db12d2790542ad4ebd2ebeba23b9482c12c29876cec2f3f8b1415&amp;p3=1225e3530bb5a35954aafe483e6c71c2f81f2ae9" rel="nofollow">
+                                <span class="ico-ssl ico">
+                                    <img src="~/Content/images/secure.png" />
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="subfooter">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="subfooter">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="subfooter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2">
+                        <div class="copyright">
+                            <p>
+                                © Công ty Cổ phần Pi Co. Văn phòng: Tầng 3, Tòa nhà Rivera Park, số 173 Xuân Thủy, Cầu Giấy, Hà Nội. <br>
+                                GPĐKKD số 0102018260 sở KHĐT Tp. Hà Nội cấp ngày 25/08/2006. Đăng ký thay đổi lần thứ: 24, ngày 17/06/2016
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--/footer-->
+
 </body>
 </html>
